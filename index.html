@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Stock market</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://kit.fontawesome.com/c31338d915.js" crossorigin="anonymous"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/letter C trade marketing logo design template.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#services_section">Services</a></li>
+                <li><a href="#team_section">Team</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+
+		<div class="head-container">
+            <div class="bg_img">
+				<video autoplay loop muted plays-inline class="back-video">
+					<source src="images/istockphoto-489848460-640_adpp_is.mp4" type="video/mp4">
+				</video>
+                <div class="intro">
+                    <h1>Stock Market <br>Prediction</h1>
+                      </div>
+			</div>	
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<br><br>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/about.avif">
+				</div>
+				<div class="side-text">
+					<h1>Benefits of <br>Investing in the<br> stock market</h1>
+                    <br>
+                    <a href="https://www.indmoney.com/articles/stocks/know-the-benefits-of-investing-in-the-stock-market",target="_blank"><button class="btn">Learn more</button></a>
+				</div>
+		</div>
+	</div>
+
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a href="#"><div class="s-card"><img src="images/handshake-icon-260nw-273810134.webp"><p>Trusted</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/850768.png"><p>Accurate Prediction</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/investment-icon-vector-25177375.jpg"><p>Real time Stocks</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/shield-check-security-icon-3d-illustration_903752-744.avif"><p>Secure</p></div></a>
+        <a href="#"><div class="s-card"><img src="images/money.png"><p>Earn Money</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/help.png"><p>24x7 Online Support</p></div></a>
+	</div>
+
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“The stock market is a device for transferring money from the impatient to the patient.” “In investing, what is comfortable is rarely profitable.” “Invest for the long haul. Don't get too greedy and don't get too scared.”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				
+				<div class="social-media">
+					<a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+					<a href="https://www.instagram.com/_ritika_2701/"target="_blank">
+                        <i class="fa-brands fa-instagram fa-3x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ritika-singh-031851213" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/deltaritika" target="_blank"
+                    ><i class="fa-brands fa-github fa-3x"></i>
+                    </a>  
+				</div><br><br><br>
+				   <p class="rights-text">Copyright © 2024 Created By Ritika Singh, Saumya Pandey, Siddhant Mishra.All Rights Reserved.</p>
+			    </div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
